@@ -1,6 +1,6 @@
 # 11NETTG30 — FIAP Cloud Games
 
-Organização do **Grupo 30** da Turma **11NETT** da Pós-Graduação em **Arquitetura de Sistemas .NET** da FIAP.
+Organização do **Grupo 24** (3ª Fase) da Turma **11NETT** da Pós-Graduação em **Arquitetura de Sistemas .NET** da FIAP.
 
 ---
 
@@ -10,6 +10,7 @@ O **FIAP Cloud Games (FCG)** é uma plataforma de games educacionais desenvolvid
 
 - **Fase 1** — API monolítica com Clean Architecture e DDD, cobrindo identidade e autenticação de usuários
 - **Fase 2** — Refatoração em microsserviços orientados a eventos, com RabbitMQ, Kubernetes e observabilidade
+- **Fase 3** — Implementação de API Gateway (Kong), persistência poliglota com MongoDB, camada de cache com Redis, refatoração do microsserviço de notificações para Serverless e aprimoramento da observabilidade com dashboards de métricas HTTP no Grafana
 
 ---
 
@@ -32,13 +33,17 @@ O **FIAP Cloud Games (FCG)** é uma plataforma de games educacionais desenvolvid
 | Categoria | Tecnologia |
 |---|---|
 | Plataforma | .NET 10 / C# 14 |
-| Banco de Dados | PostgreSQL 18 |
+| Persistência Relacional | PostgreSQL 18 |
+| Persistência NoSQL | MongoDB 7 |
+| Cache Distribuído | Redis 7 |
 | Mensageria | RabbitMQ + MassTransit |
+| API Gateway | Kong |
+| Serverless | Azure Functions |
 | Autenticação | JWT RS256 (RSA assimétrico) |
 | Containers | Docker |
 | Orquestração | Kubernetes (Minikube) |
 | Observabilidade | OpenTelemetry · Prometheus · Loki · Tempo · Grafana |
-| Pacotes Compartilhados | GitHub Packages (NuGet) |
+| Distribuição de Pacotes | GitHub Packages (NuGet) |
 
 ---
 
